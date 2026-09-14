@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>مجلس كبار المستثمرين - السوق السعودي TASI</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap');
+        body { 
+            font-family: 'Cairo', sans-serif; 
+            background-color: #020604; 
+            color: #f3f4f6; 
+            margin: 0; padding: 0;
+            display: flex; justify-content: center; align-items: center; min-height: 100vh;
+        }
+        .mobile-container {
+            width: 100%; max-width: 430px; min-height: 100vh;
+            background: linear-gradient(180deg, #04100b 0%, #020604 100%);
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.95);
+            display: flex; flex-direction: column; justify-content: space-between;
+            position: relative; overflow-x: hidden;
+            border-left: 1px solid rgba(16, 185, 129, 0.15);
+            border-right: 1px solid rgba(16, 185, 129, 0.15);
+        }
+        .gold-gradient { background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%); }
+        .gold-text { background: linear-gradient(135deg, #fef08a 0%, #fbbf24 50%, #d97706 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .royal-card { 
+            background: linear-gradient(145deg, rgba(6, 78, 59, 0.25) 0%, rgba(3, 20, 15, 0.6) 100%); 
+            border: 1px solid rgba(245, 158, 11, 0.35); 
+        }
+        .pulse-btn { animation: glow 2s infinite; }
+        @keyframes glow {
+            0% { box-shadow: 0 0 20px rgba(245, 158, 11, 0.4); }
+            50% { box-shadow: 0 0 45px rgba(245, 158, 11, 0.85); }
+            100% { box-shadow: 0 0 20px rgba(245, 158, 11, 0.4); }
+        }
+        .ticker-wrap { width: 100%; overflow: hidden; background: #03140e; border-top: 1px solid rgba(16,185,129,0.3); border-bottom: 1px solid rgba(16,185,129,0.3); padding: 8px 0; white-space: nowrap; }
+        .ticker-move { display: inline-block; animation: ticker 25s linear infinite; }
+        .ticker-item { display: inline-block; padding: 0 2rem; font-size: 0.85rem; font-weight: bold; }
+        @keyframes ticker { 0% { transform: translate3d(0, 0, 0); } 100% { transform: translate3d(100%, 0, 0); } }
+    </style>
+</head>
+<body>
+    <div class="mobile-container">
+        
+        <!-- 顶栏：沙特王室/财团高级感 -->
+        <header class="w-full py-3 px-4 border-b border-emerald-500/20 bg-black/90 flex justify-between items-center sticky top-0 z-50">
+            <div class="flex items-center gap-2">
+                <span class="text-amber-400 text-base">🇸🇦</span>
+                <span class="gold-text font-black text-xs tracking-wider">SAUDI SOVEREIGN VIP</span>
+            </div>
+            <div class="flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/40 px-2.5 py-1 rounded-full">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span class="text-[10px] text-emerald-400 font-bold">مجلس خاص ومغلق</span>
+            </div>
+        </header>
+
+        <!-- 实时沙特大盘跑马灯 -->
+        <div class="ticker-wrap text-amber-300">
+            <div class="ticker-move">
+                <span class="ticker-item">🇸🇦 مؤشر السوق الرئيسي (TASI): +1.82%</span>
+                <span class="ticker-item">🟢 أرامكو السعودية (2222): 30.50 (+2.9%)</span>
+                <span class="ticker-item">🟢 مصرف الراجحي (1120): 91.00 (+4.1%)</span>
+                <span class="ticker-item">🟢 أكوا باور (2082): 360.00 (+6.2%)</span>
+                <span class="ticker-item">⚡ تم رصد دخول سيولة ضخمة للأسهم القيادية</span>
+            </div>
+        </div>
+
+        <!-- 主体内容 -->
+        <main class="w-full px-4 py-6 flex-grow flex flex-col items-center text-center">
+            
+            <!-- 尊贵身份标语 -->
+            <div class="inline-flex items-center gap-1.5 bg-amber-500/15 border border-amber-500/40 text-amber-300 text-[11px] px-3.5 py-1.5 rounded-full mb-5 shadow-md">
+                <span>🛡️ دعوة خاصة للنخبة وكبار المستثمرين في المملكة</span>
+            </div>
+
+            <!-- 主标题：直击财富增值 -->
+            <h1 class="text-2xl sm:text-3xl font-black leading-snug mb-4 tracking-tight">
+                استحوذ على <span class="gold-text">الفرص الذهبية المخفية</span> في سوق تاسي (TASI) قبل الإعلان الرسمي
+            </h1>
+
+            <!-- 副标题 -->
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6">
+                انضم إلى <span class="text-white font-bold">مجلس التداول الخاص</span> واستقبل صفقات المضاربة السريعة والاستثمار الاستراتيجي في أسهم <span class="text-amber-400 font-bold">أرامكو، الراجحي، والشرقات الكبرى</span> بدقة غير مسبوقة.
+            </p>
+
+            <!-- 核心行动按钮 (CTA) -->
+            <div class="w-full mb-6">
+                <!-- 请将下方链接替换为你的真实群链接 -->
+                <a href="https://chat.whatsapp.com/你的真实群链接" target="_blank" 
+                   class="w-full block gold-gradient text-slate-950 font-black text-base py-4 px-4 rounded-2xl shadow-2xl transition-all transform active:scale-95 text-center pulse-btn">
+                    🚀 الانضمام الفوري إلى مجموعة الـ VIP (مجاناً اليوم)
+                </a>
+                <div class="flex justify-center items-center gap-2 mt-2.5 text-[11px] text-amber-400 font-semibold bg-amber-500/5 py-1.5 px-3 rounded-lg border border-amber-500/20">
+                    <span>⚡ مقاعد الانضمام المتاحة اليوم: <strong class="text-white bg-red-600 px-1.5 py-0.5 rounded animate-pulse">فقط 3 مقاعد</strong></span>
+                </div>
+            </div>
+
+            <!-- 核心亮点卡片（深绿皇家风） -->
+            <div class="w-full space-y-3 text-right mb-6">
+                <div class="royal-card p-3.5 rounded-xl flex items-start gap-3 shadow-md">
+                    <span class="text-2xl bg-amber-500/10 p-2 rounded-lg border border-amber-500/30">💎</span>
+                    <div>
+                        <h3 class="font-bold text-amber-300 text-xs">توصيات حصرية ذات عائد مضاعف</h3>
+                        <p class="text-slate-400 text-[11px] mt-0.5">رصد دقيق لأماكن تجميع الصناديق الكبرى وانطلاق الأسهم القيادية.</p>
+                    </div>
+                </div>
+
+                <div class="royal-card p-3.5 rounded-xl flex items-start gap-3 shadow-md">
+                    <span class="text-2xl bg-amber-500/10 p-2 rounded-lg border border-amber-500/30">📊</span>
+                    <div>
+                        <h3 class="font-bold text-amber-300 text-xs">تحليل استباقي قبل جرس افتتاح السوق</h3>
+                        <p class="text-slate-400 text-[11px] mt-0.5">تقارير سرية توضح اتجاهات مؤشر تاسي وتوقع الانعكاسات السعرية.</p>
+                    </div>
+                </div>
+
+                <div class="royal-card p-3.5 rounded-xl flex items-start gap-3 shadow-md">
+                    <span class="text-2xl bg-amber-500/10 p-2 rounded-lg border border-amber-500/30">🤝</span>
+                    <div>
+                        <h3 class="font-bold text-amber-300 text-xs">إشراف مباشر وحل محفظتك المعلقة</h3>
+                        <p class="text-slate-400 text-[11px] mt-0.5">استشارات فردية من خبراء مخضرمين لتعويض الخسائر وبناء محفظة آمنة.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 本地大户真实好评 -->
+            <div class="w-full royal-card p-4 rounded-xl text-right mb-5">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center gap-1">
+                        <span class="text-amber-400 text-xs">⭐⭐⭐⭐⭐</span>
+                        <span class="text-[11px] text-white font-bold">عضو موثق في المجلس</span>
+                    </div>
+                    <span class="text-[9px] text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/30">الرياض</span>
+                </div>
+                <p class="text-[11px] text-slate-300 italic mb-1.5 leading-relaxed">
+                    "مجلس احترافي بكل ما تحمله الكلمة من معيار. توصيات سهم أكوا باور والراجحي أنقذت محفظتي وحققت لي أرباح فاقت توقعاتي خلال أيام."
+                </p>
+                <span class="text-[10px] text-amber-400 font-bold">— نايف السبيعي (رجل أعمال ومستثمر)</span>
+            </div>
+
+            <!-- 底部再次唤醒 -->
+            <div class="w-full mb-5">
+                <a href="https://chat.whatsapp.com/你的真实群链接" target="_blank" 
+                   class="w-full block bg-emerald-600 hover:bg-emerald-500 text-white font-black text-sm py-3.5 px-4 rounded-xl shadow-lg transition-all transform active:scale-95 text-center">
+                    💬 اضغط للانضمام المباشر إلى مجموعة الواتساب
+                </a>
+            </div>
+
+            <!-- 社区规模 -->
+            <div class="text-[11px] text-slate-400 bg-black/40 p-2.5 rounded-xl border border-emerald-500/20 w-full mb-2">
+                👥 يضم المجلس حالياً أكثر من <span class="text-amber-400 font-bold">940+</span> مستثمر سعودي نشط.
+            </div>
+
+        </main>
+
+        <!-- 底部 -->
+        <footer class="w-full py-4 px-3 border-t border-slate-900 text-center text-slate-500 text-[9px]">
+            <p>تنبيه: المحتوى لأغراض تحليل السوق والتعليم المالي فقط، ولا يُعد نصيحة استثمارية مباشرة. جميع الحقوق محفوظة © 2026</p>
+        </footer>
+
+    </div>
+</body>
+</html>
